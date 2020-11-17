@@ -10,8 +10,7 @@
         inventory: "Workshop Inventory"
         project: "Security Demo"
         playbook: "checkpoint.yml"
-        credentials:
-          - "Workshop Credential"
+        credential: "Workshop Credential"
         state: "present"
         survey_enabled: yes
         survey_spec: "{{ lookup('file', 'files/checkpoint_survey.json') }}"
