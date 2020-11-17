@@ -4,7 +4,7 @@
     {
       "required": false,
       "min": 0,
-      "default": null,
+      "default": "None",
       "max": 15,
       "question_description": "Source IP Address",
       "new_question": true,
@@ -15,7 +15,7 @@
     {
       "required": false,
       "min": 0,
-      "default": null,
+      "default": "None",
       "max": 15,
       "question_description": "Destination IP Address",
       "new_question": true,
