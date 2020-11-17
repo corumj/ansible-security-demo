@@ -4,9 +4,9 @@
     {
       "required": false,
       "min": 0,
-      "default": "None",
+      "default": "172.17.105.121",
       "max": 15,
-      "question_description": "Source IP Address",
+      "question_description": "Attacker IP Address",
       "new_question": true,
       "variable": "source_ip_address",
       "question_name": "Please enter the source IPv4 address",
@@ -15,9 +15,9 @@
     {
       "required": false,
       "min": 0,
-      "default": "None",
+      "default": "172.17.249.93",
       "max": 15,
-      "question_description": "Destination IP Address",
+      "question_description": "Destination IP Address or Any",
       "new_question": true,
       "variable": "destination_ip_address",
       "question_name": "Please enter the destination IPv4 address",
