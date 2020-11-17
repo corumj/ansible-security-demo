@@ -6,6 +6,8 @@ Daily activities that consume time and could be automated are often overlooked b
 
 ## Requirements
 You'll need to spin up the [Ansible Security Workshop](https://github.com/ansible/workshops)
+1) Create a new project called "Security Demo" and use this repository [ansible-security-demo](https://github.com/corumj/ansible-security-demo)
+
 
 ## Instructions
 1) Setup and run the demo_setup.yml playbook as a job template in your Tower environment.  
