@@ -1,2 +1,4 @@
 ---
-- check_point.mgmt
+collections:
+  - check_point.mgmt
+  - ansible.tower
