@@ -1,0 +1,28 @@
+{
+  "description": "",
+  "spec": [
+    {
+      "required": true,
+      "min": 0,
+      "default": "",
+      "max": 15,
+      "question_description": "Source IP Address",
+      "new_question": true,
+      "variable": "source_ip_address",
+      "question_name": "Please enter the source IPv4 address",
+      "type": "text"
+    },
+    {
+      "required": true,
+      "min": 0,
+      "default": "",
+      "max": 15,
+      "question_description": "Destination IP Address",
+      "new_question": true,
+      "variable": "destination_ip_address",
+      "question_name": "Please enter the destination IPv4 address",
+      "type": "text"
+    }
+  ],
+  "name": ""
+}
