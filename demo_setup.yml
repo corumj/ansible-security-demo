@@ -1,0 +1,7 @@
+---
+- name: Setup demo
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Create Checkpoint playbook
+    - name: 
