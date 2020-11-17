@@ -12,7 +12,6 @@
         playbook: "checkpoint.yml"
         credentials:
           - "Workshop Credential"
-          - "Tower Credential"
         state: "present"
         survey_enabled: yes
         survey_spec: "{{ lookup('file', 'files/checkpoint_survey.json') }}"
