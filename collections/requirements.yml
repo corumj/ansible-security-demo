@@ -2,3 +2,4 @@
 collections:
   - check_point.mgmt
   - awx.awx
+  - ansible.posix
