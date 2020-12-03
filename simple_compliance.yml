@@ -135,6 +135,9 @@
           loop:
             - /etc/issue 
             - /etc/issue.net 
+      tags:
+        - never 
+        - motd 
   handlers:
     - name: Reload SSH  
       service:
