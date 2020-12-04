@@ -40,7 +40,7 @@
         - name: Add SSH public key for user
           authorized_key:
             user: admin
-            key: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+            key: "{{ lookup('file', '/.ssh/id_rsa.pub') }}"
             state: present 
 
         - name: Add sudoer rule for local user
