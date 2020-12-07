@@ -3,8 +3,28 @@
   hosts: localhost
   connection: local
   tasks:
+    - name: import login credentials for ServiceNow
+      include_vars: "{{lookup('first_found', login_info)}}"
+      vars:
+        login_info:
+          - 'private.yml'
+          - 'login_info.yml'
+
+    - name: Create Security Demo Tower Project
+      awx.awx.tower_project:
+        name: Security Demo 
+        state: present
+        organization: Default 
+        tower_username: "{{ tower_username }}"
+        tower_password: "{{ tower_password }}"
+        tower_host: https://localhost
+        tower_verify_ssl: false
+        scm_type: git 
+        scm_url: https://github.com/corumj/ansible-security-demo.git
+        scm_update_on_launch: yes 
+
     - name: Create Checkpoint Firewall template
-      tower_job_template:
+      awx.awx.tower_job_template:
         name: "Create Checkpoint Access Rule"
         job_type: "run"
         inventory: "Workshop Inventory"
