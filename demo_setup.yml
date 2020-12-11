@@ -34,3 +34,6 @@
         state: "present"
         survey_enabled: yes
         survey_spec: "{{ lookup('file', 'files/checkpoint_survey.json') }}"
+        tower_username: "{{ tower_username }}"
+        tower_password: "{{ tower_password }}"
+        tower_host: https://localhost
